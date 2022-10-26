@@ -1,0 +1,42 @@
+{
+  "name": "@barksh/protocol",
+  "version": "1.0.0",
+  "description": "Transmission Protocol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarkSH/Bark-Protocol.git"
+  },
+  "keywords": [
+    "Game"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarkSH/Bark-Protocol/issues"
+  },
+  "homepage": "https://bark.sh",
+  "dependencies": {
+    "@sudoo/marked": "^3.16.2",
+    "connor": "^2.7.0"
+  },
+  "devDependencies": {
+    "@sudoo/triforce": "^3.9.1"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
